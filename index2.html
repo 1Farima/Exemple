@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Mali Kura Académie</title>
+
+<style>
+
+body{
+    font-family: Arial;
+    background:#f4f8ff;
+    margin:0;
+}
+
+header{
+    background:#0A3D91;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* FORMULAIRE PETIT */
+.form-box{
+    max-width:380px;
+    margin:20px auto;
+    background:white;
+    padding:15px;
+    border-radius:10px;
+}
+
+.input{
+    width:100%;
+    padding:8px;
+    margin:6px 0;
+}
+
+.btn{
+    width:100%;
+    padding:8px;
+    background:#0A3D91;
+    color:white;
+    border:none;
+}
+
+/* WHATSAPP */
+.whatsapp-btn{
+    position:fixed;
+    bottom:15px;
+    right:15px;
+    width:42px;
+    height:42px;
+    background:#25D366;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.whatsapp-btn img{
+    width:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h2>MALI KURA ACADÉMIE</h2>
+<p>Contactez-nous</p>
+</header>
+
+<div class="form-box">
+
+<form action="https://api.web3forms.com/submit" method="POST">
+
+<!-- 👉 ICI TU METTRAS TA CLÉ -->
+<input type="hidden" name="access_key" value="MET_TA_CLE_ICI">
+
+<input class="input" name="nom" placeholder="Votre nom" required>
+
+<input class="input" name="email" placeholder="Votre email" required>
+
+<textarea class="input" name="message" placeholder="Votre message" required></textarea>
+
+<button class="btn">Envoyer</button>
+
+</form>
+
+</div>
+
+<!-- WHATSAPP -->
+<a class="whatsapp-btn"
+href="https://wa.me/22394040321?text=Bonjour%20Mali%20Kura%20Académie">
+<img src="https://cdn.jsdelivr.net/npm/simple-icons/icons/whatsapp.svg">
+</a>
+
+</body>
+</html>
